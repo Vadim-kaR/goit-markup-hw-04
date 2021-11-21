@@ -65,7 +65,7 @@ body {
 .link {
   text-decoration: none;
 }
-
+/*----------------header-----------------------*/
 .header {
   background-color: var(--header-bg-color);
   border-bottom: 1px solid #ececec;
@@ -95,12 +95,50 @@ body {
 .nav-link .item + .item {
   margin-left: 50px;
 }
+.nav-items .link:hover {
+  color: var(--accent-color);
+  fill: currentColor;
+}
 
+.mail-item {
+  display: inline-flex;
+  align-items: center;
+  fill: #757575;
+}
+
+.mail-icon {
+  margin-right: 10px;
+}
+
+.phone-item {
+  display: inline-flex;
+  align-items: center;
+  fill: #757575;
+}
+
+.phone-icon {
+  margin-right: 10px;
+}
+
+.nav-list .link:hover,
+.nav-list .link:focus {
+  color: var(--accent-color);
+  fill: currentColor;
+}
 /*----------------hero-section-----------------------*/
 .hero-section {
+  height: 600px;
+  max-width: 1600px;
+  margin-left: auto;
+  margin-right: auto;
   padding-top: 200px;
   padding-bottom: 200px;
-  background-color: #2f303a;
+
+  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+    url(../images/hero-img.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
 }
 
 .hero-container {
@@ -284,10 +322,6 @@ body {
   letter-spacing: 0.02em;
 }
 
-.nav-list .link:hover,
-.nav-list .link:focus {
-  color: var(--accent-color);
-}
 /*панель ссылок хедера*/
 .nav-link .link {
   color: var(--secondary-text-color);
@@ -295,10 +329,6 @@ body {
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
-}
-.nav-link .link:hover,
-.nav-link .link:focus {
-  color: var(--accent-color);
 }
 
 .footer {
