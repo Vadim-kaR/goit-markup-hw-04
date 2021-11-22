@@ -390,19 +390,16 @@ body {
   margin-left: 30px;
 }
 
-.clients-icon-box {
-}
-
 .clients-icon {
   fill: #afb1b8;
 }
 
 .clients-list-item:hover,
-.clients-link:focus {
+.clients-list-item:focus {
   border: 1px solid var(--accent-color);
 }
 
-.clients-list-item:hover .clients-icon,
+.clients-link:hover .clients-icon,
 .clients-link:focus .clients-icon {
   fill: var(--accent-color);
 }
